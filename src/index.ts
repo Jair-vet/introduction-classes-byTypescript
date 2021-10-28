@@ -1,15 +1,15 @@
-import { Hero } from './classes/Hero';
-// import { Hero as SuperHero, Hero2 } from './classes/Hero';
-// import * as HeroClasses from './classes/Hero';
+import { printObject, genericFunction, genericFunctionArrow } from './generics/generics';
 
+// printObject( 123 );
+// printObject( new Date() );
+// printObject( { a:1, b:2, c:3 } );
+// printObject( [1,2,3,4,5,6,7,8,9,10] );
+// printObject( 'Hola Mundo' );
+const name: string = 'Jair';
 
-// const ironman = new SuperHero('Ironman', 1, 55);
-const ironman = new Hero('Ironman', 10, 55);
-
-console.log( ironman );
-console.log( ironman.power );
-
-
+console.log( genericFunctionArrow(3.1415563224).toFixed(2) );
+console.log( genericFunction(new Date()).getDate );
+console.log( genericFunction( name ).toUpperCase );
 
 
 
